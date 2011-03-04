@@ -2,10 +2,10 @@ document.observe('dom:loaded', function()
 {
 	// redmine uses prototype so use it.
 
-	var links = $$('div.issue.details div.wiki a, div.issue.details div.attachments a');
+	var links = $$('div.wiki a, div.attachments a, div.journal ul.details a');
 	for (var i = 0; i < links.length; i++)
 	{
-		var link = links[i];
-		link.target = '_blank';
+		links[i].target = '_blank';
 	}
 });
+
