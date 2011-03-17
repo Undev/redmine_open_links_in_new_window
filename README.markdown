@@ -5,6 +5,10 @@
 Plugin that follow all links of content to be opened in new window
 instead of current one.
 
+Plugin by default controls only wiki and details chapters in opened issues.
+
+No configuration available yet.
+
 ## Compatibility
 
 Tested with Redmine 0.9.6, 1.0.5.
