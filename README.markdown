@@ -5,7 +5,8 @@
 Plugin that follow all links of content to be opened in new window
 instead of current one.
 
-Plugin by default controls only wiki and details chapters in opened issues.
+Plugin by default controls only wiki and details chapters in opened issues,
+and also external links in tickets.
 
 No configuration available yet.
 
@@ -23,6 +24,10 @@ Download the sources and put them to your vendor/plugins folder.
 Restart Redmine and have a fun!
 
 ## Changelog
+
+### 0.0.2
+
+Links with external class also will be opened in new window - thanks to Florian Berninger.
 
 ### 0.0.1
 
