@@ -12,7 +12,7 @@ No configuration available yet.
 
 ## Compatibility
 
-Tested with Redmine 0.9.6, 1.0.5.
+Tested with Redmine 0.9.6, 1.0.5, 2.1.0.
 
 ## Installation
 
@@ -24,6 +24,10 @@ Download the sources and put them to your vendor/plugins folder.
 Restart Redmine and have a fun!
 
 ## Changelog
+
+### 0.0.3
+
+Made compatible with Redmine 2.1.0 and above - thanks to @logical-and.
 
 ### 0.0.2
 
