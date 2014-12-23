@@ -23,7 +23,12 @@ This plugin is compatible with Redmine 0.9.6, 1.0.5, 2.x.
 
             git clone https://github.com/Undev/redmine_open_links_in_new_window.git plugins/redmine_open_links_in_new_window
 
-2. Restart Redmine.
+2. Update the Gemfile.lock file by running the following commands:  
+
+         rm Gemfile.lock  
+         bundle install
+    
+3. Restart Redmine.
 
 Now you should be able to see the plugin in **Administration > Plugins**.
 
