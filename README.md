@@ -36,6 +36,10 @@ Now you should be able to see the plugin in **Administration > Plugins**.
 
 This plugin does not require any additional actions or configuration.
 
+## Maintainers
+
+Danil Tashkinov, [github.com/nodecarter](https://github.com/nodecarter)
+
 ## License
 
 Copyright (c) 2015 Undev
