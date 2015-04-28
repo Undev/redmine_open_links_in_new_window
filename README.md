@@ -38,6 +38,7 @@ This plugin does not require any additional actions or configuration.
 
 ## Maintainers
 
+Akzhan Abdulin, [github.com/akzhan](https://github.com/akzhan)
 Danil Tashkinov, [github.com/nodecarter](https://github.com/nodecarter)
 
 ## License
