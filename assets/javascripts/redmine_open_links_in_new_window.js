@@ -1,6 +1,19 @@
 (function()
 {
 	/**
+	 * Helper function on DOM-Nodes to check for a class
+	 * name easily
+	 *
+	 * @param  {String}  className - the className to look for
+	 *
+	 * @return {Boolean} returns true if the classname is set on the
+	 *                   DOM Node
+	 */
+	HTMLElement.prototype.hasClass = function(className){
+		return this.className.indexOf(className) !== -1;
+	}
+
+	/**
 	 * Need to be binded to anchor on call
 	 */
 	var handleAnchor = function()
@@ -8,7 +21,21 @@
 		var pass = true;
 
 		// Requirements
-		if (-1 != this.className.indexOf('wiki-anchor')) pass = false;
+		if (this.hasClass('wiki-anchor')) pass = false;
+		if (this.hasClass('wiki-page')) pass = false;
+
+		//Some elements have to be excluded based on their parent nodes
+		var curNode = this;
+		while(!curNode.hasClass('wiki') && typeof curNode !== 'undefined')
+		{
+			if(curNode.hasClass('toc') || curNode.hasClass('contextual'))
+			{
+				pass = false;
+				break;
+			}
+
+			curNode = curNode.parentNode;
+		}
 
 		if (pass)
 		{
